@@ -1,0 +1,24 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #9a95fc;
+    height: 100vh;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    background:  #5f0a97;
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
