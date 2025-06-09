@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Fauna de México</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form onsubmit="return verificarLogin()">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="contrasena" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+      <p id="error" class="error"></p>
+    </form>
+  </div>
+
+  <script>
+    function verificarLogin() {
+      const usuario = document.getElementById("usuario").value;
+      const contrasena = document.getElementById("contrasena").value;
+      if (usuario === "CECYTEM" && contrasena === "123456") {
+        window.location.href = "fauna.html";
+        return false;
+      } else {
+        document.getElementById("error").textContent = "Usuario o contraseña incorrectos";
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
